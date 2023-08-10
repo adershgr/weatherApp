@@ -1,0 +1,77 @@
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f8bfd;
+}
+
+.weather-card {
+  background-color: #ffffff;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.base-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 8rem;
+}
+
+.base-data>div {
+  display: flex;
+  align-items: center;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+}
+
+.base-label {
+  margin-top: 8px;
+}
+
+.humid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card h5 {
+  margin: 0;
+}
+
+.feels-like-label {
+  padding-left: 16px;
+  font-style: italic;
+}
+
+.humid-label {
+  margin-left: 0.5rem !important;
+  font-style: italic;
+}
+
+.main-title {
+  font-size: 24px;
+}
+
+.temperature {
+  font-size: 72px;
+  font-weight: bold;
+}

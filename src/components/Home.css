@@ -1,0 +1,37 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f8bfd;
+}
+
+.home-card {
+  background-color: #ffffff;
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+  border-radius: 13px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-card h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 1.25rem !important;
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+}
+
+.form-control input {
+  margin-bottom: 1.75rem !important;
+}
