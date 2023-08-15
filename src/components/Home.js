@@ -50,26 +50,31 @@ const Home = () => {
     <div className="app-container">
       <div className="home-card">
         <form onSubmit={handleSubmit}>
-          <h1 className="text-primary">Weather App</h1>
-          <div className="form-group with-line">
-            <input
-              type="text"
-              placeholder="Enter City Name"
-              className="form-control"
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
-            <hr />
-            <button
-              type="button"
-              className="btn btn-success mt-10 form-control"
-              onClick={fetchCurrentLocation}
-            >
-              Current Device Location
-            </button>
-            <button type="submit" className="btn btn-primary form-control">
-              Get Weather
-            </button>
+          <h1 className="text-primary card-title">Weather App</h1>
+          <hr className="_line" />
+          <div className="card-details">
+            <div className="form-group">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter city name"
+                  className="form-control"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                />
+              </div>
+
+              <div className="or-divider">or</div>
+              <button
+                type="button"
+                className="btn btn-primary mt-10 form-control"
+                onClick={fetchCurrentLocation}>
+                Get Device Location
+              </button>
+              <button type="submit" className="btn btn-success form-control mt-2">
+                Get Weather
+              </button>
+            </div>
           </div>
         </form>
         {error && <p className="text-danger">{error}</p>}
